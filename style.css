@@ -1,0 +1,55 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(img/texture-wooden-boards.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.content {
+  height: 80vh;
+  background-color: #fff;
+}
+
+.container {
+  width: 90vw;
+  margin: 0.5em auto;
+}
+
+/*____RESPONSIVE____*/
+
+@media (min-width: 550px) {
+  .container {
+    width: 80vw;
+  }
+}
+@media (min-width: 650px) {
+  .content {
+    height: 75vh;
+  }
+}
+@media (min-width: 820px) {
+  .content {
+    height: 70vh;
+  }
+}
+@media (min-width: 1025px) {
+  .container {
+    width: 40vw;
+    margin: 2em auto;
+  }
+  .content {
+    height: 70vh;
+  }
+}
